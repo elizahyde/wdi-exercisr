@@ -4,7 +4,9 @@
   <title>Exercisr</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <script src="/js/custom.modernizr.js"></script>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
 
@@ -23,5 +25,14 @@
 
 <%= yield %>
 
+<script>
+  document.write('<script src=/app/'
+    + ('__proto__' in {} ? 'zepto' : 'jquery')
+    + '.js><\/script>');
+</script>
+
+<script>
+  $(document).foundation();
+</script>
 </body>
 </html>
