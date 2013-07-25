@@ -1,0 +1,46 @@
+@font-face
+{
+font-family: still_time;
+src: url('still_time.ttf'),
+     url('still_time.eot'); /* IE9 */
+}
+
+h1 {
+  color: #FF0092;
+}
+
+.top-bar .eighties h1 {
+ font-size: 42px;
+ font-family: still_time;
+ color: #FF0092;
+ letter-spacing: 2px;
+ margin: 0;
+}
+
+.top-bar .eighties h1 a {
+  color: #FF0092;
+}
+
+.contain-to-grid .top-bar   {
+  background: #B6FF00;
+  height: 55px;
+}
+.contain-to-grid {
+  background: #B6FF00;
+  margin: 0;
+}
+
+.top-bar-section {
+  background: #B6FF00;
+}
+
+.top-bar-section li a:not(.button) {
+  background: #B6FF00;
+  color: #228DFF;
+  font-size: 14px;
+}
+
+.top-bar-section > ul > .divider {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
