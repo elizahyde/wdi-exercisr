@@ -1,0 +1,15 @@
+// The `ajax` block below should get called when you make the request for generating the chart.
+
+$.ajax({
+  dataType: "json",
+  type: "get",
+  url: "/exercises/chart" + activity
+}).done(graph_activity);
+
+// "/exercises/chart/some_activity" routes to the exercises#chart controller action. It returns JSON.
+
+// When the AJAX request is done, you will have that JSON response, which is passed to the 'done' callback function:
+
+graph_activity = function(exercise_data){
+  // Write the code here to generate the chart with Morris JS.
+}

@@ -1,3 +1,9 @@
+Exercisr
+===
+This is an exercise management app in an 80s theme. It uses RoR, jQuery, AJAX.
+
+
+LAB DIRECTIONS:
 As usual, add your info to the `.env` file and run `bundle install` and then `rake db:setup`.
 
 ```

@@ -4,7 +4,7 @@ skip_before_filter :require_login, :only => [:index]
 # GET /exercises
 # GET /exercises.json
 def index
-  @exercises = Exercise.all
+  @user = current_user
 
   respond_to do |format|
     format.html # index.html.erb
@@ -71,6 +71,11 @@ def update
       format.json { render json: @exercise.errors, status: :unprocessable_entity }
     end
   end
+end
+# for jmorris chart action
+def chart
+  activity = params[:activity]
+  render :json => current_user.exercises.where(:activity => activity)
 end
 
 # DELETE /exercises/1
